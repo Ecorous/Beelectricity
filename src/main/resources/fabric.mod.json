@@ -11,7 +11,6 @@
   "environment": "*",
   "entrypoints": {},
   "mixins": [
-    "1.mixins.json"
   ],
   "depends": {
     "fabricloader": ">=0.10.0+build.208",
