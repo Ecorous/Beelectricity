@@ -1,16 +1,26 @@
-{
-  "schemaVersion": 1,
+{ "schemaVersion": 1,
   "id": "beelectricity",
   "version": "${version}",
+
   "name": "Beelectricity",
   "description": "Funny way to power your machines",
-  "authors": [],
-  "contact": {},
+  "authors": [
+    ""
+  ],
+  "contact": {
+    "homepage": "",
+    "sources": ""
+  },
   "license": "MIT",
   "icon": "assets/beelectricity/icon.png",
   "environment": "*",
-  "entrypoints": {},
+  "entrypoints": {
+    "main": [
+      "bugexplorers.beelectricity.Beelectricity"
+    ]
+  },
   "mixins": [
+    "beelectricity.mixins.json"
   ],
   "depends": {
     "fabricloader": ">=0.10.0+build.208",
