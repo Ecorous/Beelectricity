@@ -13,5 +13,5 @@ public class Beelectricity implements ModInitializer
 
     }
     
-    public static string ID = "beelectricity"
+    public static String ID = "beelectricity";
 }
