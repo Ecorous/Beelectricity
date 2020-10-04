@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "id": "1",
+  "id": "beelectricity",
   "version": "${version}",
   "name": "Beelectricity",
   "description": "Funny way to power your machines",
   "authors": [],
   "contact": {},
   "license": "MIT",
-  "icon": "assets/1/icon.png",
+  "icon": "assets/beelectricity/icon.png",
   "environment": "*",
   "entrypoints": {},
   "mixins": [
