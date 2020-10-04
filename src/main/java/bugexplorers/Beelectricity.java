@@ -12,4 +12,6 @@ public class Beelectricity implements ModInitializer
         ModBlocks.RegisterBlocks();
 
     }
+    
+    public static string ID = "beelectricity"
 }
