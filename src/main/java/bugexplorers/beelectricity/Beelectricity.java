@@ -13,10 +13,10 @@ public final class Beelectricity implements ModInitializer {
     @Override
     public final void onInitialize() {
 
-        BeelectricityBlocks.register();
-        BeelectricityBlockEntities.register();
-        BeelectricityEntities.register();
-        BeelectricityItems.register();
+        BeelectricityBlocks.registerBlocks();
+        BeelectricityBlockEntities.registerBlockEntities();
+        BeelectricityEntities.registerEntities();
+        BeelectricityItems.registerItems();
     }
 
     /**
