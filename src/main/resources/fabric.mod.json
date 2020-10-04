@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "id": "1",
+  "version": "${version}",
+  "name": "1",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/1/icon.png",
+  "environment": "*",
+  "entrypoints": {},
+  "mixins": [
+    "1.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.10.0+build.208",
+    "fabric": "*",
+    "minecraft": "~1.16.2"
+  }
+}
