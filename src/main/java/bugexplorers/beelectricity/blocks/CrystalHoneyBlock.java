@@ -1,16 +1,13 @@
 package bugexplorers.beelectricity.blocks;
 
-import net.minecraft.block.Block;
-import net.minecraft.block.Material;
+import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
+import net.minecraft.block.*;
 
 
-public class CrystalHoneyBlock extends Block {
+public class CrystalHoneyBlock extends ScaffoldingBlock
+{
 
-    public CrystalHoneyBlock() {
-        this(Settings.of(Material.STONE).nonOpaque());
-    }
-
-    public CrystalHoneyBlock(Settings settings) {
-        super(settings);
+    public CrystalHoneyBlock(FabricBlockSettings hardness) {
+        super(AbstractBlock.Settings.of(Material.STONE).nonOpaque());
     }
 }
