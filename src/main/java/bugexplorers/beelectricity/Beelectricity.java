@@ -8,7 +8,7 @@ import net.fabricmc.api.ModInitializer;
 import net.minecraft.util.Identifier;
 
 public final class Beelectricity implements ModInitializer {
-    private static final String MOD_ID = "beelectricity";
+    public static final String ID = "beelectricity";
 
     @Override
     public final void onInitialize() {
@@ -24,6 +24,6 @@ public final class Beelectricity implements ModInitializer {
      * @return a new Instance of Identifier with the Beelectricity Modid
      */
     public static Identifier createId(String path) {
-        return new Identifier(MOD_ID, path);
+        return new Identifier(ID, path);
     }
 }
