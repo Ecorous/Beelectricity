@@ -1,4 +1,4 @@
-package bugexplorers.beelectricity;
+package bugexplorers.beelectricity.client;
 
 
 import bugexplorers.beelectricity.registries.BeelectricityBlocks;
@@ -8,10 +8,13 @@ import net.minecraft.client.render.RenderLayer;
 
 import static net.minecraft.client.render.RenderLayer.getTranslucent;
 
-public class ClientInitializer implements ClientModInitializer {
+public class BeelectricityClient implements ClientModInitializer {
+
         @Override
-        public void onInitializeClient() {
-            BlockRenderLayerMap.INSTANCE.putBlock(BeelectricityBlocks.CRYSTALLIZED_HONEY_BLOCK, RenderLayer.getTranslucent());
+        public final void onInitializeClient() {
+
+            BlockRenderLayerMap.INSTANCE.putBlock(
+                    BeelectricityBlocks.CRYSTALLIZED_HONEY_BLOCK, RenderLayer.getTranslucent());
         }
     }
 

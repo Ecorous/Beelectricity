@@ -5,13 +5,16 @@ import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.block.entity.BlockEntityType;
 import net.minecraft.util.registry.Registry;
 
-public interface BeelectricityBlockEntities {
+public class BeelectricityBlockEntities {
 
-    static void registerBlockEntities() {
+    private BeelectricityBlockEntities() {
+    }
+
+    public static void registerBlockEntities() {
 
     }
 
-    static <T extends BlockEntity> BlockEntityType<T> putBlockEntityType(String name, BlockEntityType<T> type) {
-        return Registry.register(Registry.BLOCK_ENTITY_TYPE, Beelectricity.createId(name), type);
+    private static void putBlockEntityType(String name, BlockEntityType<? extends BlockEntity> type) {
+        Registry.register(Registry.BLOCK_ENTITY_TYPE, Beelectricity.createId(name), type);
     }
 }

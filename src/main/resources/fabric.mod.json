@@ -17,6 +17,9 @@
   "entrypoints": {
     "main": [
       "bugexplorers.beelectricity.Beelectricity"
+    ],
+    "client": [
+      "bugexplorers.beelectricity.client.BeelectricityClient"
     ]
   },
   "mixins": [

@@ -4,13 +4,16 @@ import bugexplorers.beelectricity.Beelectricity;
 import net.minecraft.item.Item;
 import net.minecraft.util.registry.Registry;
 
-public interface BeelectricityItems {
+public class BeelectricityItems {
 
-    static void registerItems() {
+    private BeelectricityItems() {
+    }
+
+    public static void registerItems() {
 
     }
 
-    static <T extends Item> T putItem(String name, T item) {
-        return Registry.register(Registry.ITEM, Beelectricity.createId(name), item);
+    private static void putItem(String name, Item item) {
+        Registry.register(Registry.ITEM, Beelectricity.createId(name), item);
     }
 }
