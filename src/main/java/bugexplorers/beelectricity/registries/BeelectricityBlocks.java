@@ -15,10 +15,11 @@ public interface BeelectricityBlocks {
 
     Block HORNET_HIVE_BLOCK = new Block(FabricBlockSettings.of(Material.METAL).hardness(4.0f));
     CrystalHoneyBlock CRYSTALLIZED_HONEY_BLOCK = new CrystalHoneyBlock(FabricBlockSettings.of(Material.METAL).hardness(4.0f));
+
     static void registerBlocks() {
-        Registry.register(Registry.BLOCK, new Identifier(Beelectricity.ID, "hornet_hive_block"), HORNET_HIVE_BLOCK);
+        putBlock("hornet_hive_block", HORNET_HIVE_BLOCK);
         Registry.register(Registry.ITEM, new Identifier(Beelectricity.ID, "hornet_hive_block"), new BlockItem(HORNET_HIVE_BLOCK, new Item.Settings().group(BeelectricityItemGroups.GROUP_1)));
-        Registry.register(Registry.BLOCK, new Identifier(Beelectricity.ID, "crystallized_honey_block"), CRYSTALLIZED_HONEY_BLOCK);
+        putBlock("crystallized_honey_block", CRYSTALLIZED_HONEY_BLOCK);
         Registry.register(Registry.ITEM, new Identifier(Beelectricity.ID, "crystallized_honey_block"), new BlockItem(CRYSTALLIZED_HONEY_BLOCK, new Item.Settings().group(BeelectricityItemGroups.GROUP_1)));
 
     }
